@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <Button
+            android:text="扫描"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnScan"
+            android:layout_marginLeft="128.0dp"
+            android:layout_marginTop="39.3dp"
+            android:layout_marginBottom="20.7dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="27.3dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="22.0dp">
+        <TextView
+            android:text="扫描结果 ： "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtResult"
+            android:autoLink="web" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="5.3dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4">
+            <TextView
+                android:text="请输入文字 ： "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView2"
+                android:gravity="center_vertical" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txInput"
+                android:textSize="12dp"
+                android:text="http://thinkpower.info/xamarin/cn/" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5">
+            <Button
+                android:text="产生条码"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/btnGenerateBarcode"
+                android:layout_marginTop="6.0dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout6"
+            android:layout_marginTop="14.7dp">
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgBarcode" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

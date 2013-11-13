@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s0="http://tempuri.org/" xmlns:tns="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="CelsiusToFahrenheit">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="Celsius" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CelsiusToFahrenheitResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="CelsiusToFahrenheitResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FahrenheitToCelsius">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="Fahrenheit" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FahrenheitToCelsiusResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="FahrenheitToCelsiusResult" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetAllInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="name" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="age" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetAllInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetAllInfoResult" type="tns:People" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="People">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Age" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Height" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Country" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="Weight" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="CelsiusToFahrenheitSoapIn">
+    <part name="parameters" element="tns:CelsiusToFahrenheit" />
+  </message>
+  <message name="CelsiusToFahrenheitSoapOut">
+    <part name="parameters" element="tns:CelsiusToFahrenheitResponse" />
+  </message>
+  <message name="FahrenheitToCelsiusSoapIn">
+    <part name="parameters" element="tns:FahrenheitToCelsius" />
+  </message>
+  <message name="FahrenheitToCelsiusSoapOut">
+    <part name="parameters" element="tns:FahrenheitToCelsiusResponse" />
+  </message>
+  <message name="GetAllInfoSoapIn">
+    <part name="parameters" element="tns:GetAllInfo" />
+  </message>
+  <message name="GetAllInfoSoapOut">
+    <part name="parameters" element="tns:GetAllInfoResponse" />
+  </message>
+  <portType name="TempConvertSoap">
+    <operation name="CelsiusToFahrenheit">
+      <input message="tns:CelsiusToFahrenheitSoapIn" />
+      <output message="tns:CelsiusToFahrenheitSoapOut" />
+    </operation>
+    <operation name="FahrenheitToCelsius">
+      <input message="tns:FahrenheitToCelsiusSoapIn" />
+      <output message="tns:FahrenheitToCelsiusSoapOut" />
+    </operation>
+    <operation name="GetAllInfo">
+      <input message="tns:GetAllInfoSoapIn" />
+      <output message="tns:GetAllInfoSoapOut" />
+    </operation>
+  </portType>
+  <binding name="TempConvertSoap" type="tns:TempConvertSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="CelsiusToFahrenheit">
+      <soap:operation soapAction="http://tempuri.org/CelsiusToFahrenheit" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="FahrenheitToCelsius">
+      <soap:operation soapAction="http://tempuri.org/FahrenheitToCelsius" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAllInfo">
+      <soap:operation soapAction="http://tempuri.org/GetAllInfo" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="TempConvertSoap12" type="tns:TempConvertSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="CelsiusToFahrenheit">
+      <soap12:operation soapAction="http://tempuri.org/CelsiusToFahrenheit" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="FahrenheitToCelsius">
+      <soap12:operation soapAction="http://tempuri.org/FahrenheitToCelsius" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetAllInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetAllInfo" style="document" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TempConvert">
+    <port name="TempConvertSoap" binding="tns:TempConvertSoap">
+      <soap:address location="http://soapconvert.azurewebsites.net/tempconvert.asmx" />
+    </port>
+    <port name="TempConvertSoap12" binding="tns:TempConvertSoap12">
+      <soap12:address location="http://soapconvert.azurewebsites.net/tempconvert.asmx" />
+    </port>
+  </service>
+</definitions>

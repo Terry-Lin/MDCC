@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="BarcodeDroid.BarcodeDroid">
+	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10" />
+	<application android:label="BarcodeDroid" android:icon="@drawable/ic_launcher_barcode_scanner">
+	</application>
+	<uses-permission android:name="android.permission.CAMERA" />
+</manifest>

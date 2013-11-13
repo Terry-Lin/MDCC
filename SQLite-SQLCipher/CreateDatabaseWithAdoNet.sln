@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateDatabaseWithAdoNet", "CreateDatabaseWithAdoNet\CreateDatabaseWithAdoNet.csproj", "{15C2AF44-5A52-4578-8FED-CFF363020097}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Ad-Hoc|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.AppStore|iPhoneSimulator.Deploy.0 = AppStore|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Debug|iPhone.ActiveCfg = Debug|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Debug|iPhone.Build.0 = Debug|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Release|iPhone.ActiveCfg = Release|iPhone
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Release|iPhone.Build.0 = Release|iPhone
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{15C2AF44-5A52-4578-8FED-CFF363020097}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CreateDatabaseWithAdoNet\CreateDatabaseWithAdoNet.csproj
+	EndGlobalSection
+EndGlobal

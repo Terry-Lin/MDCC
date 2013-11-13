@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:id="@+id/linearLayout1"
+    p1:orientation="vertical">
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="fill_parent"
+        p1:layout_height="37.3dp"
+        p1:id="@+id/linearLayout3"
+        p1:layout_marginTop="8.0dp">
+        <RadioGroup
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="38.7dp"
+            p1:id="@+id/rgService"
+            p1:orientation="horizontal"
+            p1:layout_marginRight="0.0dp"
+            p1:layout_marginTop="12.0dp">
+            <RadioButton
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:checked="true"
+                p1:text="SOAP"
+                p1:id="@+id/rbSoap"
+                p1:layout_marginLeft="18.7dp" />
+            <RadioButton
+                p1:layout_width="wrap_content"
+                p1:layout_height="19.3dp"
+                p1:text="WCF"
+                p1:id="@+id/rbWCF" />
+            <RadioButton
+                p1:layout_width="wrap_content"
+                p1:layout_height="19.3dp"
+                p1:text="RestFUL"
+                p1:id="@+id/rbRest" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="fill_parent"
+        p1:layout_height="42.7dp"
+        p1:id="@+id/linearLayout2"
+        p1:layout_marginTop="18.0dp">
+        <TextView
+            p1:text="请输入温度:"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:id="@+id/textView1"
+            p1:layout_width="wrap_content"
+            p1:layout_height="fill_parent"
+            p1:layout_marginLeft="32.0dp"
+            p1:layout_marginTop="12.7dp"
+            p1:layout_marginBottom="0.0dp" />
+        <EditText
+            p1:id="@+id/txtInput"
+            p1:layout_width="68.0dp"
+            p1:layout_height="34.7dp"
+            p1:layout_marginTop="4.7dp"
+            p1:layout_marginLeft="9.3dp"
+            p1:layout_marginRight="0.0dp" />
+        <Button
+            p1:text="转换"
+            p1:layout_width="wrap_content"
+            p1:layout_height="fill_parent"
+            p1:id="@+id/btnConvert"
+            p1:layout_marginLeft="22.0dp" />
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="fill_parent"
+        p1:layout_height="37.3dp"
+        p1:id="@+id/linearLayout3"
+        p1:layout_marginTop="8.0dp">
+        <RadioGroup
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="38.7dp"
+            p1:id="@+id/rgMethod"
+            p1:orientation="horizontal"
+            p1:layout_marginRight="0.0dp">
+            <RadioButton
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:checked="true"
+                p1:text="摄式转华式"
+                p1:id="@+id/rbCtoF"
+                p1:layout_marginLeft="41.3dp" />
+            <RadioButton
+                p1:layout_width="wrap_content"
+                p1:layout_height="19.3dp"
+                p1:text="华式转摄式"
+                p1:id="@+id/rbFtoC" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="fill_parent"
+        p1:layout_height="46.0dp"
+        p1:id="@+id/linearLayout4">
+        <TextView
+            p1:text="转换结果："
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="wrap_content"
+            p1:layout_height="fill_parent"
+            p1:id="@+id/textView2"
+            p1:gravity="center_vertical"
+            p1:layout_marginLeft="41.3dp" />
+        <TextView
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:text="Result"
+            p1:layout_width="wrap_content"
+            p1:layout_height="fill_parent"
+            p1:id="@+id/txtResult"
+            p1:gravity="center_vertical" />
+    </LinearLayout>
+</LinearLayout>
